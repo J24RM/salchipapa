@@ -25,7 +25,7 @@ Juego en Linea
 El juego esta hecho para que funcione desde la consola, esta hecho en c++, para poder jugarlo tienes que tener instalado un compilador de
 c++ en tu ordenador
 
-compilar el juego: g++ fantasy_of_cpp.cpp -o fantasy_of_cpp
+compilar el juego: g++ main.cpp -o main
 
 correr en linux: "/a.out"
 
