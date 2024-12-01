@@ -1,3 +1,11 @@
+//Creacion 9 nov 2024
+//Modificación 29 nov 2024
+//Autor: Jesús Rodriguez Mendoza A01713550
+
+//Descripción Clase Padre de los enemigos
+
+
+
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 #include <string>
@@ -9,36 +17,37 @@ using namespace std;
 
 class Enemigo {
 protected:
-    string Nombre;
-    int Vida;
+    string nombre;
+    int vida;
 
 public:
+    //Constructores
     Enemigo() {
-        Nombre = "Muerto";
-        Vida = 0;
+        nombre = "Muerto";
+        vida = 0;
     }
 
-    Enemigo(string _Nombre,int _Vida) {
-        Nombre = _Nombre;
-        Vida = _Vida;
+    Enemigo(string _nombre,int _vida) {
+        nombre = _nombre;
+        vida = _vida;
     }
 
     //Getters
     string get_Nombre() {
-        return Nombre;
+        return nombre;
     }
 
     int get_Vida() {
-        return Vida;
+        return vida;
     }
 
     //Setters
-    void set_Vida(int _Vida) {
-        Vida = _Vida;
+    void set_Vida(int _vida) {
+        vida = _vida;
     }
 
-    void set_Nombre(string _Nombre) {
-        Nombre = _Nombre;
+    void set_Nombre(string _nombre) {
+        nombre = _nombre;
     }
 
 };
