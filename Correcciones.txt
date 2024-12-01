@@ -1,0 +1,3 @@
+1.-Se modifico el codigo para que cumpliera con la Subcompetencia: Cumplo con estándares en mi repositorio: tiene un readme claro que explica el proyecto  (para que sirve,  para que no sirve y como se usa), no tiene archivos basura o versiones pasadas
+
+2.-Los commits si estan guardados correctamente en el github
