@@ -1,3 +1,10 @@
+//Creación 23 nov 2024 
+//Modificación 29 nov 2024
+//Autor: Jesús Rodriguez Mendoza A01713550
+
+//Descripción Clase Hija de Enemigo, El goblin es un tipo de enemigo que ataca al jugador con golpes
+
+
 #ifndef GOBLIN_H
 #define GOBLIN_H
 #include <iostream>
@@ -7,22 +14,25 @@ using namespace std;
 
 class Goblin: public Enemigo{
 	private:
-		int Fuerza;
+		int fuerza;
 
 	public:
+		//Constructores
 		Goblin():Enemigo(){
-			Fuerza = 0;
+			fuerza = 0;
 		}
 
-		Goblin(int _Fuerza,string _Nombre,int _Vida): Enemigo(_Nombre,_Vida){
-			Fuerza = _Fuerza;
+		Goblin(int _fuerza,string _nombre,int _vida): Enemigo(_nombre,_vida){
+			fuerza = _fuerza;
 		}
 
-		void Atacar(Player& player)
-		{
-    		int VidaNueva = player.get_vida() - Fuerza;
-    		player.set_vida(VidaNueva);
-    		cout << "El enemigo ataco al jugador" << endl;
+		//Metodos
+
+		// Función atacar sirve para que el goblin pueda atacar al player,los parametros que le llegan es al objetivo que va a atacar y regresa un void 
+		void Atacar(Player& player){
+    		int vida_Nueva = player.get_Vida() - fuerza;
+    		player.set_Vida(vida_Nueva);
+    		cout << "El enemigo te quito:" << fuerza << " De Vida" << endl;
 
 		}
 
